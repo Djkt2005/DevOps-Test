@@ -2,15 +2,22 @@ pipeline{
     agent any
     stages{
         stage('install dependencies'){
-            sh 'npm install';
+            steps{
+                bat 'npm install';
+            }
         }
+        
 
         stage('run tests'){
-            sh 'npm test || echo "No tests defined"';
+            steps{
+                bat 'npm run test || echo "No tests defined"';
+            }
         }
 
         stage('build'){
-            sh 'npm run build';
+            steps{
+                bat 'npm run build';
+            }
         }
     }
 }
