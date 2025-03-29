@@ -3,20 +3,20 @@ pipeline{
     stages{
         stage('install dependencies'){
             steps{
-                sh 'npm install';
+                bat 'npm install';
             }
         }
         
 
         stage('run tests'){
             steps{
-                sh 'npm run test || echo "No tests defined"';
+                bat 'npm run test || echo "No tests defined"';
             }
         }
 
         stage('build'){
             steps{
-                sh 'npm run build';
+                bat 'npm run build';
             }
         }
     }
