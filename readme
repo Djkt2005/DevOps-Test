@@ -34,4 +34,3 @@ Set up a Jenkins pipeline to build, test, and deploy a Node.js application.
 - Implementation of the appropriate build command.
 
 Complete the setup and run the pipeline in Jenkins. Good luck!
-git remote set-url <url>
